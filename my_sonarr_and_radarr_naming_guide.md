@@ -47,25 +47,25 @@ These are important, or else the naming format will not work.
 | ------------------ | ------------------ |
 | Unknown*           | Unknown            |
 | SDTV*              | SDTV               |
-| WEBRip-480p        | 480p.WEBRip        |**
-| WEBDL-480p         | 480p.WEBDL         |**
+| WEBRip-480p        | 480p.WEBRip        |\*\*
+| WEBDL-480p         | 480p.WEBDL         |\*\*
 | DVD                | DVDRip             |
-| Bluray-480p        | 480p.BluRay        |**
+| Bluray-480p        | 480p.BluRay        |\*\*
 | HDTV-720p          | 720p.HDTV          |
 | HDTV-1080p         | 1080p.HDTV         |
 | Raw-HD*            | Raw-HD             |
-| WEBRip-720p        | 720p.WEBRip        |**
-| WEBDL-720p         | 720p.WEBDL         |**
+| WEBRip-720p        | 720p.WEBRip        |\*\*
+| WEBDL-720p         | 720p.WEBDL         |\*\*
 | Bluray-720p        | 720p.BluRay        |
-| WEBRip-1080p       | 1080p.WEBRip       |**
-| WEBDL-1080p        | 1080p.WEBDL        |**
+| WEBRip-1080p       | 1080p.WEBRip       |\*\*
+| WEBDL-1080p        | 1080p.WEBDL        |\*\*
 | Bluray-1080p       | 1080p.BluRay       |
-| Bluray-1080p Remux | 1080p.BluRay.Remux |***
+| Bluray-1080p Remux | 1080p.BluRay.Remux |\*\*
 | HDTV-2160p         | 2160p.HDTV         |
-| WEBRip-2160p       | 2160p.WEBRip       |**
+| WEBRip-2160p       | 2160p.WEBRip       |\*\*
 | WEBDL-2160p        | 2160p.WEBDL        |
 | Bluray-2160p       | 2160p.BluRay       |
-| Bluray-2160p Remux | 2160p.BluRay.Remux |***
+| Bluray-2160p Remux | 2160p.BluRay.Remux |\*\*
 
 \*Haven't figured out what to do with these yet, so I left them as-is.
 \*\*Denotes deviations from Desi's naming structure for missing quality profiles since added to Sonarr
