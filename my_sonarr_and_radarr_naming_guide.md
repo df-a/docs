@@ -63,7 +63,7 @@ These are important, or else the naming format will not work.
 | Bluray-1080p Remux** | 1080p.BluRay.Remux |
 | HDTV-2160p           | 2160p.HDTV         |
 | WEBRip-2160p**       | 2160p.WEBRip       |
-| WEBDL-2160p          | 2160p.WEBDL        |
+| WEBDL-2160p**        | 2160p.WEBDL        |
 | Bluray-2160p         | 2160p.BluRay       |
 | Bluray-2160p Remux** | 2160p.BluRay.Remux |
 
