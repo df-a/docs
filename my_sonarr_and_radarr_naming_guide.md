@@ -159,37 +159,43 @@ Even though releases sometimes use the `repeat` style for multi episode TV shows
 These are important, or else the naming format will not work.
 
 
-| Quality      | Title              |
-| ------------ | ------------------ |
-| Unknown*     | Unknown            |
-| WORKPRINT*   | WORKPRINT          |
-| CAM*         | CAM                |
-| TELESYNC*    | TELESYNC           |
-| TELECINE*    | TELECINE           |
-| REGIONAL*    | REGIONAL           |
-| DVDSCR*      | DVDSCR             |
-| SDTV*        | SDTV               |
-| DVD          | DVDRip             |
-| DVD-R        | DVDR               |
-| WEBDL-480p   | 480p.WEB           |
-| Bluray-480p  | 480p.BluRay        |
-| Bluray-576p  | 576p.BluRay        |
-| HDTV-720p    | 720p.HDTV          |
-| WEBDL-720p   | 720p.WEB           |
-| Bluray-720p  | 720p.BluRay        |
-| HDTV-1080p   | 1080p.HDTV         |
-| WEBDL-1080p  | 1080p.WEB          |
-| Bluray-1080p | 1080p.BluRay       |
-| Remux-1080p  | 1080p.BluRay.REMUX |
-| HDTV-2160p   | 2160p.HDTV         |
-| WEBDL-2160p  | 2160p.WEB          |
-| Bluray-2160p | 2160p.BluRay       |
-| Remux-2160p  | 2160p.BluRay.REMUX |
-| BR-DISK*     | BR-DISK            |
-| Raw-HD*      | Raw-HD             |
+| Quality        | Title              |
+| -------------- | ------------------ |
+| Unknown*       | Unknown            |
+| WORKPRINT*     | WORKPRINT          |
+| CAM*           | CAM                |
+| TELESYNC*      | TELESYNC           |
+| TELECINE*      | TELECINE           |
+| REGIONAL*      | REGIONAL           |
+| DVDSCR*        | DVDSCR             |
+| SDTV*          | SDTV               |
+| DVD            | DVDRip             |
+| DVD-R          | DVDR               |
+| WEBRip-480p**  | 480p.WEBRip        |
+| WEBDL-480p**   | 480p.WEBDL         |
+| Bluray-480p    | 480p.BluRay        |
+| Bluray-576p    | 576p.BluRay        |
+| HDTV-720p      | 720p.HDTV          |
+| WEBRip-720p**  | 720p.WEBRip        |
+| WEBDL-720p**   | 720p.WEBDL         |
+| Bluray-720p    | 720p.BluRay        |
+| HDTV-1080p     | 1080p.HDTV         |
+| WEBRip1080p**  | 1080p.WEBRip       |
+| WEBDL-1080p    | 1080p.WEBDL        |
+| Bluray-1080p   | 1080p.BluRay       |
+| Remux-1080p    | 1080p.BluRay.REMUX |
+| HDTV-2160p     | 2160p.HDTV         |
+| WEBRip-2160p** | 2160p.WEBRip       |
+| WEBDL-2160p**  | 2160p.WEBDL        |
+| Bluray-2160p   | 2160p.BluRay       |
+| Remux-2160p    | 2160p.BluRay.REMUX |
+| BR-DISK*       | BR-DISK            |
+| Raw-HD*        | Raw-HD             |
 
 
 \*Haven't figured out what to do with these yet, so I left them as-is.
+
+\*\*Denotes deviations from Desi's naming structure for missing quality profiles since added to Sonarr
 
 ### Movie Naming
 
