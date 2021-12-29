@@ -228,4 +228,4 @@ Replace with Space Dash
 {Movie Collection}/{Movie TitleThe} ({Release Year}) [tmdb-{TmdbId}]
 ```
 
->Movie Folder Example: The Movie - Title (2010)
+>Movie Folder Example: The Movie Collection/Movie - Title, The (2010) [tmdb-345691]
