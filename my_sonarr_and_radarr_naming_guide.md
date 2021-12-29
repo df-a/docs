@@ -82,17 +82,17 @@ Yes
 #### Standard Episode Format
 
 ```
-{Series.CleanTitleYear}.S{season:00}E{episode:00}.{QUALITY.REAL}.{QUALITY.PROPER}.{Quality.Title}.{MediaInfo.VideoCodec}-{RELEASE.GROUP}
+{Series.Title}.{season:00}x{episode:00}.{Episode.Title}.{Quality.Title}.{PREFERRED WORDS}.{MediaInfo VideoDynamicRange}.{MediaInfo VideoBitDepth}bit.{MediaInfo VideoCodec}.{MediaInfo.AudioCodec}.{MediaInfo.AudioChannels}{MediaInfo AudioLanguages}-{Release Group}
 ```
 
-> Single Episode Example: The.Series.Title.2010.S01E01.PROPER.720p.HDTV.x264-RLSGRP
+> Single Episode: The.Series.Title!.01x01.Episode.Title.(1).720p.HDTV.INTERNAL.HDR.10bit.x264.DTS.5.1-RlsGrp
 
 
 #### Daily Episode Format
 
-~~{Series.CleanTitleYear}.{Air.Date}.{QUALITY.REAL}.{QUALITY.PROPER}.{Quality.Title}.{MediaInfo.VideoCodec}-{RELEASE.GROUP}~~
+~~{Series.Title}.{Air-Date}.{Episode.Title}.{Quality.Title}.{PREFERRED WORDS}.{MediaInfo VideoDynamicRange}.{MediaInfo VideoBitDepth}bit.{MediaInfo VideoCodec}..{MediaInfo.AudioCodec}.{MediaInfo.AudioChannels}{MediaInfo AudioLanguages}-{Release Group}~~
 
-> ~~ Daily-Episode Example: The.Series.Title.2010.2013.10.30.PROPER.720p.HDTV.x264-RLSGRP~~
+> ~~ The.Series.Title!.2013-10-30.Episode.Title.(1).720p.HDTV.INTERNAL.HDR.10bit.x264.DTS.5.1-RlsGrp~~
 
 ```
 {Series.CleanTitleYear}.S{season:00}E{episode:00}.{QUALITY.REAL}.{QUALITY.PROPER}.{Quality.Title}.{MediaInfo.VideoCodec}-{RELEASE.GROUP}
@@ -105,10 +105,11 @@ _Using Standard Episode Format now because there were issues matching daily show
 #### Anime Episode Format
 
 ```
-{Series.CleanTitleYear}.S{season:00}E{episode:00}.{QUALITY.REAL}.{QUALITY.PROPER}.{Quality.Title}.{MediaInfo.VideoCodec}-{RELEASE.GROUP}
+{[Release Group]} {Series.Title}.{absolute:000}.{season:00}x{episode:00}.{Episode.CleanTitle}.{Quality.Title}.{PREFERRED WORDS}.{MediaInfo VideoDynamicRange}.{MediaInfo VideoBitDepth}bit.{MediaInfo VideoCodec}.{MediaInfo.AudioCodec}.{MediaInfo.AudioChannels} {MediaInfo AudioLanguages}
 ```
 
-> Anime Episode Example: The.Series.Title.2010.S01E01.720p.HDTV.x264-RLSGRP
+> Single Episode: [RlsGrp] The.Series.Title!.001.01x01.Episode.Title.1.720p.HDTV.INTERNAL.HDR.10bit.x264.DTS.5.1 [JA]
+
 
 #### Series Folder Format
 
@@ -135,12 +136,12 @@ _This style is also preferred by [Plex](https://support.plex.tv/hc/en-us/article
 #### Multi-Episode Style
 
 ```
-Prefixed Range
+Extend
 ```
 
->Multi-Episode Example: The.Series.Title.2010.S01E01-E03.PROPER.720p.HDTV.x264-RLSGRP
+> Multi Episode: The.Series.Title!.01x01-02-03.Episode.Title.720p.HDTV.INTERNAL.HDR.10bit.x264.DTS.5.1-RlsGrp
 >
->Anime Multi-Episode Example: The.Series.Title.2010.S01E01-E03.720p.HDTV.x264-RLSGRP
+> Anime Multi Episode: [RlsGrp] The.Series.Title!.001-002-003.01x01-02-03.Episode.Title.720p.HDTV.INTERNAL.HDR.10bit.x264.DTS.5.1 [JA]
 
 Even though releases sometimes use the `repeat` style for multi episode TV shows (e.g. S01E01E02), the scene actually prefers the `Prefixed Range` style (e.g. S01E01-E02), which is also the naming style [Plex](https://support.plex.tv/hc/en-us/articles/200220687-Naming-Series-Season-Based-TV-Shows) recommends.
 
@@ -216,7 +217,7 @@ Replace with Space Dash
 
 #### Standard Movie Format
 ```
-{Movie.CleanTitle}.{Release.Year}.{EDITION.TAGS}.{QUALITY.REAL}.{QUALITY.PROPER}.{Quality.Title}.{MediaInfo.VideoCodec}-{RELEASE.GROUP}
+{Edition Tags}/{Movie.CleanTitle}.{Release.Year}.{EDITION.TAGS}.{QUALITY.REAL}.{QUALITY.PROPER}.{Quality.Title}.{MediaInfo.VideoCodec}-{RELEASE.GROUP}
 ```
 
 >Movie Example: The.Movie.Title.2010.ULTIMATE.EXTENDED.EDITION.PROPER.1080p.BluRay.x264-EVOLVE
@@ -224,7 +225,7 @@ Replace with Space Dash
 
 #### Movie Folder Format
 ```
-{Movie Title} ({Release Year})
+{Movie Collection}/{Movie TitleThe} ({Release Year}) [tmdb-{TmdbId}]
 ```
 
 >Movie Folder Example: The Movie - Title (2010)
