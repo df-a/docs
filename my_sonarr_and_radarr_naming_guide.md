@@ -217,10 +217,10 @@ Replace with Space Dash
 
 #### Standard Movie Format
 ```
-{Edition Tags}/{Movie.CleanTitle}.{Release.Year}.{EDITION.TAGS}.{QUALITY.REAL}.{QUALITY.PROPER}.{Quality.Title}.{MediaInfo.VideoCodec}-{RELEASE.GROUP}
+{Edition Tags}/{Movie.CleanTitle}.{Release.Year}.{EDITION.TAGS}.{QUALITY.REAL}.{QUALITY.PROPER}.{Quality.Title}.{MediaInfo.VideoCodec}.{MediaInfo VideoDynamicRange}.{MediaInfo VideoBitDepth}bit.{MediaInfo AudioCodec}.{MediaInfo AudioChannels}-{RELEASE.GROUP}
 ```
 
->Movie Example: The.Movie.Title.2010.ULTIMATE.EXTENDED.EDITION.PROPER.1080p.BluRay.x264-EVOLVE
+>Movie Example: Ultimate Extended Edition/The.Movie.Title.2010.ULTIMATE.EXTENDED.EDITION.PROPER.1080p.BluRay.x264.HDR.10bit.DTS.5.1-EVOLVE
 
 
 #### Movie Folder Format
