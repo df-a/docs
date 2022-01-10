@@ -82,10 +82,10 @@ Yes
 #### Standard Episode Format
 
 ```
-{Series.Title}.{season:00}x{episode:00}.{Episode.Title}.{Quality.Title}.{PREFERRED WORDS}.{MediaInfo VideoDynamicRange}.{MediaInfo VideoBitDepth}bit.{MediaInfo VideoCodec}.{MediaInfo.AudioCodec}.{MediaInfo.AudioChannels}{MediaInfo AudioLanguages}-{Release Group}
+{Series.CleanTitleYear}.{season:00}x{episode:00}.{Episode.CleanTitle}.{Quality.Title}.{PREFERRED WORDS}.{MediaInfo VideoDynamicRange}.{MediaInfo VideoBitDepth}bit.{MediaInfo VideoCodec}.{MediaInfo.AudioCodec}.{MediaInfo.AudioChannels}{MediaInfo AudioLanguages}-{Release Group}
 ```
 
-> Single Episode: The.Series.Title!.01x01.Episode.Title.(1).720p.HDTV.INTERNAL.HDR.10bit.x264.DTS.5.1-RlsGrp
+> Single Episode: The.Series.Title!.2010.01x01.Episode.Title.1.720p.HDTV.INTERNAL.HDR.10bit.x264.DTS.5.1-RlsGrp
 
 
 #### Daily Episode Format
@@ -95,9 +95,9 @@ Yes
 > ~~ The.Series.Title!.2013-10-30.Episode.Title.(1).720p.HDTV.INTERNAL.HDR.10bit.x264.DTS.5.1-RlsGrp~~
 
 ```
-{Series.CleanTitleYear}.S{season:00}E{episode:00}.{QUALITY.REAL}.{QUALITY.PROPER}.{Quality.Title}.{MediaInfo.VideoCodec}-{RELEASE.GROUP}
+{Series.CleanTitleYear}.{Air-Date}.{Episode.CleanTitle}.{Quality.Title}.{PREFERRED WORDS}.{MediaInfo VideoDynamicRange}.{MediaInfo VideoBitDepth}bit.{MediaInfo VideoCodec}..{MediaInfo.AudioCodec}.{MediaInfo.AudioChannels}{MediaInfo AudioLanguages}-{Release Group}
 ```
-> Daily-Episode Example: The.Series.Title.2010.S01E01.PROPER.720p.HDTV.x264-RLSGRP
+> Daily-Episode Example:  The.Series.Title!.2010.2013-10-30.Episode.Title.1.720p.HDTV.INTERNAL.HDR.10bit.x264.DTS.5.1-RlsGrp
 
 _Using Standard Episode Format now because there were issues matching daily shows such as Conan (2010) properly. Also saw posts from Plex team members who also suggested using the 0x00 format for dailies._
 
@@ -105,10 +105,10 @@ _Using Standard Episode Format now because there were issues matching daily show
 #### Anime Episode Format
 
 ```
-{[Release Group]} {Series.Title}.{absolute:000}.{season:00}x{episode:00}.{Episode.CleanTitle}.{Quality.Title}.{PREFERRED WORDS}.{MediaInfo VideoDynamicRange}.{MediaInfo VideoBitDepth}bit.{MediaInfo VideoCodec}.{MediaInfo.AudioCodec}.{MediaInfo.AudioChannels} {MediaInfo AudioLanguages}
+{[Release Group]} {Series.CleanTitleYear}.{absolute:000}.{season:00}x{episode:00}.{Episode.CleanTitle}.{Quality.Title}.{PREFERRED WORDS}.{MediaInfo VideoDynamicRange}.{MediaInfo VideoBitDepth}bit.{MediaInfo VideoCodec}.{MediaInfo.AudioCodec}.{MediaInfo.AudioChannels} {MediaInfo AudioLanguages}
 ```
 
-> Single Episode: [RlsGrp] The.Series.Title!.001.01x01.Episode.Title.1.720p.HDTV.INTERNAL.HDR.10bit.x264.DTS.5.1 [JA]
+> Single Episode: [RlsGrp] The.Series.Title!.2010.001.01x01.Episode.Title.1.720p.HDTV.INTERNAL.HDR.10bit.x264.DTS.5.1 [JA]
 
 
 #### Series Folder Format
@@ -139,9 +139,9 @@ _This style is also preferred by [Plex](https://support.plex.tv/hc/en-us/article
 Extend
 ```
 
-> Multi Episode: The.Series.Title!.01x01-02-03.Episode.Title.720p.HDTV.INTERNAL.HDR.10bit.x264.DTS.5.1-RlsGrp
+> Multi Episode: The.Series.Title!.2010.01x01-02-03.Episode.Title.720p.HDTV.INTERNAL.HDR.10bit.x264.DTS.5.1-RlsGrp
 >
-> Anime Multi Episode: [RlsGrp] The.Series.Title!.001-002-003.01x01-02-03.Episode.Title.720p.HDTV.INTERNAL.HDR.10bit.x264.DTS.5.1 [JA]
+> Anime Multi Episode: [RlsGrp] The.Series.Title!.2010.001-002-003.01x01-02-03.Episode.Title.720p.HDTV.INTERNAL.HDR.10bit.x264.DTS.5.1 [JA]
 
 Even though releases sometimes use the `repeat` style for multi episode TV shows (e.g. S01E01E02), the scene actually prefers the `Prefixed Range` style (e.g. S01E01-E02), which is also the naming style [Plex](https://support.plex.tv/hc/en-us/articles/200220687-Naming-Series-Season-Based-TV-Shows) recommends.
 
